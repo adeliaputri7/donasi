@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Left Section: Illustration -->
+        <div class="left-section">
+            <img src="logobabi.png" alt="Illustration" class="illustration">
+        </div>
+
+        <!-- Right Section: Form -->
+        <div class="right-section">
+            <div class="form-container">
+                <div class="logo">
+                    <img src="logopeduly.png" alt="Logo" class="logo-img">
+                </div>
+                <h1>HALO SOBAT PEDULY!</h1>
+                <p>Mari menjadi bagian dari sobat peduly!</p>
+                <form action="login.php" method="POST">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Masukkan email">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" placeholder="********">
+                    </div>
+                    <button id="login-btn" class="primary-btn" type="submit">Masuk</button>
+                    <button id="daftar-btn" class="secondary-btn" type="button">Daftar</button>
+                    <p class="or">Atau</p>
+                    <button id="google-login-btn" class="google-btn" type="button">Masuk dengan Google</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
